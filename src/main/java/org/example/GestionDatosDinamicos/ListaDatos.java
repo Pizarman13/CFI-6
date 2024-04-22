@@ -16,8 +16,8 @@ public class ListaDatos {
         datosReales.add(dato);
     }
 
-    public void addDatoEntero(int dato1, int dato2) {
-        datosEnteros.add(new Pareja<>(dato1, dato2));
+    public void addDatoEntero(Pareja<Integer, Integer> dato) {
+        datosEnteros.add(dato);
     }
 
     public void eliminarDatoReal(Double dato) {
@@ -27,6 +27,14 @@ public class ListaDatos {
     public void eliminarDatoEntero(Pareja<Integer, Integer> dato) {
         datosEnteros.remove(dato);
     }
-    
+
+    public void modidicarDatoReal(int posicion, double dato) {
+        datosReales.set(posicion, dato);
+    }
+
+    public void modificarDatoEntero(int posicion, Pareja<Integer, Integer> dato) {
+        datosEnteros.set(posicion, dato);
+    }
+
 
 }
