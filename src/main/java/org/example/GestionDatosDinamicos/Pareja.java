@@ -25,4 +25,9 @@ public class Pareja<A, B> {
     public void setSegundo(B segundo) {
         this.segundo = segundo;
     }
+
+    @Override
+    public String toString() {
+        return "(" + primero + ", " + segundo + ")";
+    }
 }
