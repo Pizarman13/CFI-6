@@ -18,6 +18,14 @@ public class GestionRelaciones {
         relacionTextoNum.put(texto, num);
     }
 
+    public String obtenerLetra(int numero) {
+        return relacionNumTexto.get(numero);
+    }
+
+    public int obtenerNumero(String letra) {
+        return relacionTextoNum.get(letra);
+    }
+
     public void mostrarRelacionesNumTexto() {
         System.out.println("Relaciones num -> texto");
         for (Map.Entry<Integer, String> relacion : relacionNumTexto.entrySet()) {

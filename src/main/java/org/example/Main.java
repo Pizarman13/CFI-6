@@ -29,9 +29,10 @@ public class Main {
         gestion.addRelacion(3, "tres");
         gestion.addRelacion(6, "hexagono");
 
+        System.out.println("El valor obtenido al buscar la clave 1 es: " + gestion.obtenerLetra(1));
+        System.out.println("El valor obtenido al buscar la clave 'hexagono' es: " + gestion.obtenerNumero("hexagono"));
+
         gestion.mostrarRelacionesNumTexto();
-
         gestion.mostrarRelacionesTextoNum();
-
     }
 }
