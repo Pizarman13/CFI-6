@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.GestionDatosDinamicos.*;
+import org.example.IndexacionYVisualizacion.*;
 import org.example.MapasYAsociaciones.*;
 
 
@@ -34,5 +35,10 @@ public class Main {
 
         gestion.mostrarRelacionesNumTexto();
         gestion.mostrarRelacionesTextoNum();
+
+        //indexacion y visualizacion
+        IndexacionRecursiva indexacion = new IndexacionRecursiva();
+        indexacion.indexarDirectorio(new java.io.File("C:\\Users\\Usuario\\Desktop\\prueba"));
+        indexacion.listaArchivosOrdenada();
     }
 }
