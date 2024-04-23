@@ -38,5 +38,37 @@ public class ListaDatos {
         datosEnteros.set(posicion, dato);
     }
 
+    public List<Double> getDatosReales() {
+        return datosReales;
+    }
+
+    public List<Pareja<Integer, Integer>> getDatosEnteros() {
+        return datosEnteros;
+    }
+
+    public void setDatosReales(List<Double> datosReales) {
+        this.datosReales = datosReales;
+    }
+
+    public void setDatosEnteros(List<Pareja<Integer, Integer>> datosEnteros) {
+        this.datosEnteros = datosEnteros;
+    }
+
+    public void mostrarDatosReales() {
+        for (Double dato : datosReales) {
+            System.out.println(dato);
+        }
+    }
+
+    public void mostrarDatosEnteros() {
+        for (Pareja<Integer, Integer> dato : datosEnteros) {
+            System.out.println(dato);
+        }
+    }
+
+    public void mostrarDatos() {
+        mostrarDatosReales();
+        mostrarDatosEnteros();
+    }
 
 }
