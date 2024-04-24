@@ -1,10 +1,29 @@
 package org.example.AnalisisOrganizacion;
 
-import javax.swing.*;
-import java.util.ArrayList;
+public class OrdenacionBusqueda {
 
-public class OrdenacionBusqueda extends JFrame {
+    private double precio;
+    private String producto;
 
-    private ArrayList<String> ventas;
+    public OrdenacionBusqueda(double precio, String producto) {
+        this.precio = precio;
+        this.producto = producto;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public String getProducto() {
+        return producto;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
 
 }
